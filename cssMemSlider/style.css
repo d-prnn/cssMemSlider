@@ -15,10 +15,12 @@ body {
     align-items: center; 
 }
 
+.slide1,
 .slide2, 
 .slide3, 
 .slide4, 
-.slide5, 
+.slide5,
+.title__slide1, 
 .title__slide2, 
 .title__slide3, 
 .title__slide4, 
@@ -129,4 +131,17 @@ label:active,
     transition: background 0.5s;
     padding: 0.1rem;
     background-color: fuchsia;
+}
+
+#slide1:checked ~ #img1,
+#slide1:checked ~ #title1,
+#slide2:checked ~ #img2,
+#slide2:checked ~ #title2,
+#slide3:checked ~ #img3,
+#slide3:checked ~ #title3,
+#slide4:checked ~ #img4,
+#slide4:checked ~ #title4,
+#slide5:checked ~ #img5,
+#slide5:checked ~ #title5 {
+    transform: scale(1);
 }
